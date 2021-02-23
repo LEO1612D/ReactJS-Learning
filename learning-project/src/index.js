@@ -1,17 +1,22 @@
+//import required libraries
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
 
+
+//create component
+const App = () => <div><h1>Hello There !!</h1></div>
+
+//render component
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <App></App>,
+    document.querySelector('#root')
+    )
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+    
+//RENDER 2nd COMPONENT    
+// const Dpp = () => <div><h1>Hello There 2</h1></div>
+// ReactDOM.render(
+//     <Dpp></Dpp>,
+//     document.querySelector('#rootB')
+// )
